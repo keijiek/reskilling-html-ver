@@ -1,0 +1,33 @@
+/* 
+  1rem の参照サイズ。【変化】520px ではもっと下げる。
+ */
+html, body {
+  font-size: 15px;
+}
+
+body, header, footer, main, section, h1, h2, h3, div, dl,dt,dd {
+  box-sizing: border-box;
+}
+
+/*
+  コンテンツのブロック(最大幅960px)を囲うブロックにあたる。
+  【重要】：ここに下記の2行より他のwidthを余分に指定すると、小さい表示幅で必要以上のシュリンクが生じるなどの意図せざる動作の原因となりかねない。
+*/
+body, header, footer {
+  width: 100%;
+  min-width: 320px;
+}
+
+header {
+  padding: 1rem;
+}
+footer {
+  padding: 1rem;
+}
+main {
+  padding: 0 1rem;
+}
+
+dt {
+  font-weight: bold;
+}

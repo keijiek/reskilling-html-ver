@@ -1,0 +1,47 @@
+@media screen and (max-width: 520px) {
+  .top-level-container {
+    min-width: 320px;
+  }
+
+  /* nav の item の横幅を 1rem 小さく */
+  .nav-container__item {
+    width: 5rem;
+  }
+
+  /* 小画面にしたとき main>section の内側余白が、そのままだと細すぎると感じたので、960レイアウトより太くしてある。 */
+  .main-section {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  /* job-example section */
+  .job-example__item {
+    width: 120px;
+    margin: 0.1rem 0.2rem;
+    padding: 0.2rem;
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
+  }
+
+  /* カード */
+  .card-design {
+    width: 130px;
+    height: 180px;
+    margin: 5px 3px;
+  }
+
+
+  /* 学校 */
+  .school-map__img {
+  }
+  /* Fotter, 確定 ==================================== */
+  .footer__address {
+    max-width: 360px;
+    /* min-width: 320px; */
+  }
+  .address__head {
+    width: 60px;
+  }
+}

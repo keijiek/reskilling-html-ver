@@ -1,0 +1,161 @@
+:root {
+  --main-bg-color: #eee;
+  --main-font-color: #111;
+  --sub-bg-color: #ccc;
+  --sub-font-color: #333;
+  --main-font-2nd-color: #009;
+
+  --header-bg-color:      #00c;
+  --header-font-color:    #fff;
+  --header-font-2nd-color:#f66;
+
+  --footer-bg-color:        var(--header-bg-color);
+  --footer-font-color:      var(--header-font-color);
+  
+  --secondary-bg-color: #963;
+  --secondary-font-color: #eee;
+
+  --nav-bg-color: #fff;
+  --nav-font-color: #000;
+  --nav-border-color: #000;
+
+  --section-bg-color: #f9f9f9;
+  --section-border-color: #000;
+}
+
+/* まず全体の色指定 */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+/* header の色 */
+header {
+  background-color: var(--header-bg-color);
+  color:            var(--header-font-color);
+}
+.header-outer-container {
+  box-shadow: 0.4rem 0.4rem 0.4rem black;
+}
+header a {
+  color: var(--header-font-color);
+}
+.header__prime-head>span,
+.header__pre-head {
+  /* color: var(--header-font-2nd-color); */
+
+}
+
+
+/*
+  footer の色
+*/
+footer {
+  background-color: var(--footer-bg-color);
+  color:            var(--footer-font-color);
+}
+footer a {
+  color: var(--footer-font-color);
+}
+
+
+/*
+  ナヴィゲーターの色
+  nav ul a li 
+*/
+.nav-container__item {
+  background-color: var(--nav-bg-color);
+  border-color:     var(--nav-border-color);
+  color:            var(--nav-font-color);
+  opacity: 0.9;
+}
+/* 左端に追加する border の色。※上記の border color と合致させよ */
+.nav-container__item:first-of-type {
+  border-left-color:     var(--nav-border-color);
+}
+.nav-container__item:hover {
+  opacity: 0.7;
+}
+
+/*
+  main > section 共通色
+*/
+.main__section {
+  background-color: var(--section-bg-color);
+}
+/* main > section に border を付けた場合の色 */
+.main-bordered-section,
+.main-bordered-section__head {
+  border-color: var(--section-border-color);
+}
+
+/*
+  job-example section
+*/
+/* job の例で挙がっている文字列の色 */
+.job-example__item {
+  color:        var(--main-font-color);
+  border-color: var(--sub-font-color);
+}
+
+.plain-text-like-anchor:link,
+.plain-text-like-anchor:visited,
+.plain-text-like-anchor:hover,
+.plain-text-like-anchor:active
+{
+  color: var(--main-font-color);
+}
+
+/* 
+  応募セクションの色
+*/
+/* dd>dt の色 */
+.application-info__list-head {
+  color: var(--main-font-2nd-color);
+}
+
+/* 
+  選べる学びのコースセクション
+*/
+.cource-list {
+  background-color: #9cf;
+  border-color: transparent;
+}
+
+/* カードの背景色 */
+.card-design--color1 {
+  background-color: #ff9;
+}
+.card-design--color2{
+  background-color: #fc9;
+}
+/* カードの影 */
+.card-design {
+  box-shadow: 0.2rem 0.2rem 0.2rem;
+}
+
+/* 矢印 */
+.downward-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  position: relative;
+  width: 0.2em;
+  height: 2rem;
+  color: black;
+  background: currentColor;
+}
+.downward-arrow::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 0.2rem solid currentColor;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  position: absolute;
+  left: 50%;
+  bottom: -0.05em;
+  box-sizing: border-box;
+}

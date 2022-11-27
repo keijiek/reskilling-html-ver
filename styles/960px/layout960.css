@@ -1,0 +1,314 @@
+/* 
+  header, nav, footer 直下のボックス, および main 自体の class。
+  コンテンツの最大幅を960pxに制限するためのもの。
+  それを覆う body, header, footer は、base.css で幅を指定されている。
+ */
+.top-level-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container, .header-container, .nav-container {
+  /* margin: 0 auto; */
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+/* header */
+.header-outer-container {
+
+  
+}
+
+/* nav-container ==================================== */
+/* nav ul */
+.nav-container__list {
+  /* flex box 設定 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  /* レイアウト(flexの他) */
+  margin: 0.4rem 0 0;
+  /* 項目のドット無し */
+  list-style: none;
+  
+}
+/* nav ul a li の a にかかるスタイル*/
+.nav-container__item {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-left: none;
+  width: 6rem;
+  height: 100%;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+/* nav ul a li の 最初の要素のみ 欠けた border を付加 */
+.nav-container__item:first-child {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+/* main 下の section 共通設定 ==================================== */
+.main-section {
+  margin: 1rem auto;
+  padding: 0 0.6rem 0.6rem 0.6rem;
+}
+/* main 下の section の h 共通設定 */
+.main-section__head {
+  font-size: 1.4rem;
+  margin: 0.5rem 0 0.2rem;
+}
+/* h2 中央寄せ */
+.main-section__head--centered {
+  text-align: center;
+}
+/* h2 下線付加 */
+.main-section__head--under-bordered {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+
+/* main 下の section に border を付ける場合の border の設定 */
+.main-bordered-section {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+
+/* introduction 前口上 section の設定 ==================================== */
+/* p */
+.introduction__paragraph {
+  font-size: 0.95rem;
+  text-indent: 1rem;
+  line-height: 1.4rem;
+  margin: 0.1rem 0;
+}
+
+/* 
+  job-example 新しい仕事とは ====================================
+  【あとは、color.css で色を編集する必要あり】
+*/
+.job-example {
+  overflow: hidden;
+}
+/* h2 */
+.job-example__head {
+  text-align: center;
+}
+
+/* .job-example ul */
+.job-example__list {
+  /* flex box 設定 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  /* ul である可能性を考え、 */
+  list-style-type: none;
+  /* レイアウト */
+  width: 100%;
+  padding: 0;
+  font-size: 0.9rem;
+}
+/* 背景画像 */
+.job-example {
+  background-image: url(../../images/common/jobs.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+/* job-example li */
+.job-example__item {
+  width:150px;
+  margin: 0.1rem 0.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  /* border */
+  /* border: solid 1px; */
+  border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+  -moz-border-radius: 1.6rem;
+  -ms-border-radius: 1.6rem;
+  -o-border-radius: 1.6rem;
+  -webkit-border-radius: 1.6rem;
+}
+.job-example__item__many-character {
+  font-size: 0.8rem;
+}
+
+
+/* 応募セクション ==================================== */
+.application-info__list-head-set {
+  margin-bottom: 0.6rem;
+}
+.application-info__list-head-set:last-child {
+  margin-bottom: 0;
+}
+.application-info__list-data {
+  margin-left: 1rem;
+}
+.application-info__list-data>p {
+  margin: 0;
+}
+
+/*
+  「選べる学びのコース」(カードを並べる所)セクション ====================================
+*/
+/* 選べる学びのコース > h2 */
+.cource-list__head {
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+/* カードのコンテナを全部中央寄せ */
+.card-list__upper,
+.card-list__middle,
+.card-list__bottom {
+  margin: 0 auto;
+}
+/* カードの上と下のコンテナは flex box */
+.card-list__upper,
+.card-list__bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* 一枚のカード共通の設定 */
+.card-design {
+  width: 220px;
+  height: 280px;
+  margin: 10px 6px;
+}
+/* カード四隅の丸み */
+.card-design {
+  border: solid 1px transparent;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+/* カード見出し */
+.card-design__head {
+  text-align: center;
+  font-size: 1.1rem;
+}
+/* image の wrap, 内容物(img)を中央寄せするための設定 */
+.card-design__image-box {
+  text-align: center;
+}
+/* カード */
+.card-design__image {
+  width: 95%;
+  height: auto;
+}
+/* カード文章 */
+.card-design__description {
+  padding: 0 0.6rem;
+  margin: 0.4rem 0 0.4rem 0;
+}
+
+/* 矢印のコンテナ, 中の矢印を中央寄せするflex設定 */
+.arrow-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 
+  休眠預金活動事業による事業です ====================================
+*/
+/* ロゴの float をボックス内にとどめる, overflow hidden バージョン */
+.sponser {
+  overflow: hidden;
+  zoom: 1;
+}
+/* 休眠ロゴ img */
+.sponser__kyumin-logo {
+  float: left;
+  margin-right: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+/* h2 */
+.sponser__head {
+  margin-bottom: 0.3rem;
+}
+/* p */
+.sponser__description {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/*
+  教室　====================================
+*/
+/* float 消し */
+.school-description {
+  overflow: hidden;
+}
+.school-description__img {
+  width: 20%;
+  height: auto;
+  max-width: 150px;
+  min-width: 100px;
+  float: left;
+}
+/* p */
+.school-description__paragraph {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/* h3 */
+.school-map__head {
+  margin-bottom: 0.4rem;
+}
+.school-map__img {
+  width: 50%;
+  height: auto;
+  max-width: 390px;
+  min-width: 180px;
+}
+
+/* 
+  Footer, 確定 ====================================
+*/
+.footer__head {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+/* footer address */
+.footer__address {
+  width: 400px;
+  /* margin: 0 auto; */
+}
+/* footer address th */
+.address__head {
+  text-align: left;
+  width: 80px;
+}
+.address__head::after {
+  content: ':';
+}
+/* footer address td */
+.address__item {
+}
