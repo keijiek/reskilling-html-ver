@@ -15,9 +15,29 @@
 }
 
 /* header */
-.header-outer-container {
-
-  
+.header__pre-head {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+.header__prime-head {
+  margin-top: 0.4rem;
+}
+/* アニメ */
+.header__images-wrap {
+  height: 300px;
+  animation: image_anime 10s ease infinite;
+  -webkit-animation: image_anime 10s ease infinite;
+}
+@keyframes image_anime {
+  0% {
+    background-image: url(../../images/header/header01.jpg);
+  }
+  50% {
+    background-image: url(../../images/header/header02.jpg);
+  }
+  100% {
+    background-image: url(../../images/header/header01.jpg);
+  }
 }
 
 /* nav-container ==================================== */
