@@ -8,6 +8,14 @@
     width: 5rem;
   }
 
+
+  /* アニメ枠を縮小 */
+  .main-visual__anime {
+    width:100%;
+    height: 280px;
+    background-size: 500px;
+  }
+
   /* 小画面にしたとき main>section の内側余白が、そのままだと細すぎると感じたので、960レイアウトより太くしてある。 */
   .main-section {
     padding: 0 1rem 1rem 1rem;
@@ -35,7 +43,10 @@
 
   /* 学校 */
   .school-map__img {
+    float: none;
+    margin-right: 0;
   }
+
   /* Fotter, 確定 ==================================== */
   .footer__address {
     max-width: 360px;

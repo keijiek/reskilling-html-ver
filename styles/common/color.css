@@ -4,6 +4,7 @@
   --sub-bg-color: #ccc;
   --sub-font-color: #333;
   --main-font-2nd-color: #009;
+  --main-font-3rd-color: #000;
 
   --header-bg-color:      #00c;
   --header-font-color:    #fff;
@@ -34,16 +35,12 @@ header {
   background-color: var(--header-bg-color);
   color:            var(--header-font-color);
 }
-.header-outer-container {
-  box-shadow: 0.4rem 0.4rem 0.4rem black;
-}
 header a {
   color: var(--header-font-color);
 }
-.header__prime-head>span,
-.header__pre-head {
-  /* color: var(--header-font-2nd-color); */
-
+/* header の影 */
+.header-outer-container {
+  /* box-shadow: 0.4rem 0.4rem 0.4rem black; */
 }
 
 
@@ -111,7 +108,8 @@ footer a {
 */
 /* dd>dt の色 */
 .application-info__list-head {
-  color: var(--main-font-2nd-color);
+  /* color: var(--main-font-2nd-color); */
+  color: var(--main-font-3rd-color);
 }
 
 /* 

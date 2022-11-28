@@ -5,6 +5,16 @@ html, body {
   font-size: 15px;
 }
 
+/*
+  フォント種類. body に設定
+*/
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  "ＭＳ Ｐゴシック", "MS PGothic", "MS Pｺﾞｼｯｸ",
+  "MS Pゴシック", ＭＳＰゴシック, MSPゴシック, Osaka,
+  Verdana, Arial, Helvetica, Roboto, sans-serif;
+}
+
 body, header, footer, main, section, h1, h2, h3, div, dl,dt,dd {
   box-sizing: border-box;
 }
@@ -18,14 +28,12 @@ body, header, footer {
   min-width: 320px;
 }
 
-header {
-  padding: 1rem;
-}
+
 footer {
   padding: 1rem;
 }
 main {
-  padding: 0 1rem;
+  padding: 0 9px;
 }
 
 dt {

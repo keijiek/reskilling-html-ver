@@ -2,6 +2,7 @@
 @import url(960px/base960.css);
 @import url(520px/base520.css);
 @import url(960px/layout960.css);
+@import url(768px/layout768.css);
 @import url(520px/layout520.css);
 @import url(common/module.css);
 @import url(common/color.css);
