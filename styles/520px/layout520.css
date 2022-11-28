@@ -15,6 +15,20 @@
     height: 280px;
     background-size: 500px;
   }
+  @keyframes image_anime {
+    0% {
+      background-image: url(../../images/header/header01.jpg);
+      background-position: 45% 50%;
+    }
+    50% {
+      background-image: url(../../images/header/header02.jpg);
+      background-position: 55% 50%;
+    }
+    100% {
+      background-image: url(../../images/header/header01.jpg);
+      background-position: 45% 50%;
+    }
+  }
 
   /* 小画面にしたとき main>section の内側余白が、そのままだと細すぎると感じたので、960レイアウトより太くしてある。 */
   .main-section {
