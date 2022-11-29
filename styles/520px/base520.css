@@ -1,5 +1,13 @@
 @media screen and (max-width: 520px) {
   html, body {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  /*
+    小さい画面で意図せぬシュリンクが起こっていたが、
+    min-widthを最低(320)より大き目にすると、起こらなくなった
+  */
+  body, header, main, footer {
+    min-width: 360px
   }
 }

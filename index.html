@@ -13,17 +13,19 @@
 <body id="body">
 
   <!-- 1.0 Header -->
-  <header class="header-outer-container">
+  <header>
+    <!-- header-inner-container ここから↓ -->
     <div class="header-inner-container">
-      <!-- タイトル文字 -->
-      <div class="header-title top-level-container">
-        <div class="header__pre-head">Miyazaki&nbsp;Reskilling&nbsp;&&nbsp;Re-employment&nbsp;Project</div>
-        <h1 class="header__prime-head">あなたの<span>就職&nbsp;応援</span>プロジェクト</h1>
+
+      <!-- logo-title -->
+      <div class="logo-title">
+        <div class="logo-title__pre-head">Miyazaki&nbsp;Reskilling&nbsp;&&nbsp;Re-employment&nbsp;Project</div>
+        <h1 class="logo-title__prime-head">あなたの<span>就職&nbsp;応援</span>プロジェクト</h1>
       </div>
 
       <!-- navigator -->
       <nav>
-        <div class="nav-container top-level-container">
+        <div class="nav-container ">
           <ul class="nav-container__list">
             <li><a class="nav-container__item" href="./index.html">Top</a></li>
             <li><a class="nav-container__item" href="#">Item</a></li>
@@ -31,24 +33,20 @@
           </ul>
         </div>
       </nav>
+
     </div>
+    <!-- header-inner-container ここまで↑ -->
   </header>
 
-  <!-- 3.0 Main -->
-  <main class="main-container top-level-container">
+<!-- 3.0 Main -->
+<main>
+  <div class="main-inner-container">
 
     <!-- メインビジュアル -->
     <div class="main-visual">
       <div class="main-visual__anime">
       </div>
     </div>
-    <!-- <div class="main-visual-slider">
-      <div class="main-visual-slider__inner">
-        <div class="main-visual-slider__item"><img class="main-visual-slider__img" src="images/header/header01.jpg"></div>
-        <div class="main-visual-slider__item"><img class="main-visual-slider__img" src="images/header/header02.jpg"></div>
-        <div class="main-visual-slider__item"><img class="main-visual-slider__img" src="images/header/header01.jpg"></div>
-      </div>
-    </div> -->
   
     <!-- 3.1 Introduction (前口上セクション) -->
     <section class="introduction main-section main-bordered-section">
@@ -228,7 +226,7 @@
         <h3 class="school-map__head">教室の地図</h3>
         <div class="school-map__img-wrap">
           <img class="school-map__img" src="images/common/map.png" alt="宮崎県宮崎市大淀4丁目5-10南宮崎駅前ビルC棟1F">
-          <dl>
+          <dl class="scholl-address-list">
             <dt>教室の住所</dt>
             <dd class="school-map__data-item">宮崎県宮崎市大淀4丁目5-10南宮崎駅前ビルC棟1F</dd>
             <dt>教室の電話</dt>
@@ -237,12 +235,12 @@
         </div>
       </div>
     </section>
-
-  </main>
+  </div>
+</main>
 
   <!-- 4.0 Footer, 確定 -->
   <footer>
-    <div class="footer-container top-level-container">
+    <div class="footer-inner-container ">
       <!-- <h2 class="footer__head">一般社団法人&nbsp;みやざき公共・協働研究会&nbsp;就労支援事業</h2> -->
       <address class="footer__address">
         <table>

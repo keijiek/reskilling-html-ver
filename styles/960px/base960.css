@@ -15,25 +15,21 @@ body {
   Verdana, Arial, Helvetica, Roboto, sans-serif;
 }
 
-body, header, footer, main, section, h1, h2, h3, div, dl,dt,dd {
+/*
+  box-sizing:border-box; を指定。
+  疑問： width に関する意図せぬ動作の原因となっていないか、気になる。
+*/
+body, header, footer, main, article, section, div, p,
+h1, h2, h3, h4, h5, h6, dl, dt, dd, li, ul, ol {
   box-sizing: border-box;
 }
 
 /*
-  コンテンツのブロック(最大幅960px)を囲うブロックにあたる。
-  【重要】：ここに下記の2行より他のwidthを余分に指定すると、小さい表示幅で必要以上のシュリンクが生じるなどの意図せざる動作の原因となりかねない。
+  次の4つのコンテナは width 100%。内部にコンテナを入れて、それをレイアウトの外枠にする。
+  base css の次元で、width にこれ以上の数値を入れるのは、設計思想的にも、意図せぬ動作を回避するためにも、よろしくないと思う。
 */
-body, header, footer {
+body, header, main, footer {
   width: 100%;
-  min-width: 320px;
-}
-
-
-footer {
-  padding: 1rem;
-}
-main {
-  padding: 0 9px;
 }
 
 dt {

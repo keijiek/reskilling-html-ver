@@ -1,42 +1,50 @@
 /* 
-  header, nav, footer 直下のボックス, および main 自体の class。
-  コンテンツの最大幅を960pxに制限するためのもの。
-  それを覆う body, header, footer は、base.css で幅を指定されている。
- */
-.top-level-container {
-  max-width: 978px;
+  header, footer, main (それぞれwidth:100%) の innner-container たち。
+  役割は2つ:
+    1. 各部の横幅を決定する。
+    2・ padding で外周の余白を作り、傘下の要素にpaddingやmarginを書かせない。
+  max-width は、基礎値の960px に両脇の padding を足す事。
+  【重要】: width,margin,padding 等は可能な限りここに集中させる。
+*/
+/* 幅の変数 */
+:root {
+  --width-content: 960px;
+  --padding-inner-container: 10px;
+}
+/* 【重要】サイト全体の横幅を指定 */
+.header-inner-container, .main-inner-container, .footer-inner-container {
+  max-width: calc(var(--width-content) + var(--padding-inner-container) * 2);
   margin: 0 auto;
 }
-
-.footer-container, .header-container, .nav-container {
-  padding-right: 0.6rem;
-  padding-left: 0.6rem;
+/* 左右と下のpadding */
+.header-inner-container, .main-inner-container, .footer-inner-container {
+  padding-right: var(--padding-inner-container);
+  padding-left: var(--padding-inner-container);
+  padding-bottom: var(--padding-inner-container);
+}
+/* footer 上端のpadding */
+.footer-inner-container {
+  padding-top: var(--padding-inner-container);
+}
+/* header 上端のpadding */
+.header-inner-container {
+  padding-top: var(--padding-inner-container);
 }
 
 /*
-  header ==============================================
+  header の logo-title 部 ==============================================
 */
-.header-outer-container{
-padding: 9px;
-}
-/* タイトル文字 */
-.header-title {
-  padding-top: 9px;
-}
-.header__pre-head {
-  margin-top: 0.6rem;
+/* h1 と pre-head の間を詰めるための設定 */
+.logo-title__pre-head {
   margin-bottom: 0;
 }
-.header__prime-head {
+.logo-title__prime-head {
   margin-top: 0.4rem;
 }
 
 /*
-  nav-container ====================================
+  header の nav-container 部 ====================================
 */
-/* 下端にpadding 9px */
-.nav-container {
-}
 /* nav ul */
 .nav-container__list {
   /* flex box 設定 */
@@ -71,7 +79,7 @@ padding: 9px;
 */
 .main-visual {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: var(--width-content);
   min-width: 300px;
 }
 /* アニメ部分、固定値 */
@@ -403,7 +411,6 @@ padding: 9px;
 /* footer address */
 .footer__address {
   width: 400px;
-  /* margin: 0 auto; */
 }
 /* footer address th */
 .address__head {
@@ -412,7 +419,4 @@ padding: 9px;
 }
 .address__head::after {
   content: ':';
-}
-/* footer address td */
-.address__item {
 }
