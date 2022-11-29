@@ -4,10 +4,18 @@
   }
 
   /*
-    小さい画面で意図せぬシュリンクが起こっていたが、
-    min-widthを最低(320)より大き目にすると、起こらなくなった
+    min-width が小さすぎると、横幅を小さくする過程で意図せぬシュリンクが起こる。
+    最低 width は、よくある小型端末の最低である 360px にしておき、
+    やや古い 320px 用の設定は下記に分けて定義することにする。
   */
   body, header, main, footer {
     min-width: 360px
+  }
+}
+
+/* 横幅 320px の 'iphone 6' と 'iphone SE 2016' 用の設定 */
+@media screen and (max-width:320px) {
+  body, header, main, footer {
+    min-width: 320px
   }
 }

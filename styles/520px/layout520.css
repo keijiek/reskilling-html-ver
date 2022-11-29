@@ -1,4 +1,7 @@
 @media screen and (max-width: 520px) {
+  .logo-title__prime-head {
+    font-size: 1.8rem;
+  }
   /* nav の item の横幅を 1rem 小さく */
   .nav-container__item {
     width: 5rem;
@@ -66,6 +69,6 @@
     /* min-width: 320px; */
   }
   .address__head {
-    width: 60px;
+    width: 66px;
   }
 }
