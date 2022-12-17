@@ -150,6 +150,14 @@
   border-bottom-width: 1px;
 }
 
+/* sub section */
+.sub-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.sub-section:last-child {
+  margin-bottom: 0.4rem;
+}
 
 /* main 下の section に border を付ける場合の border の設定 */
 .main-bordered-section {
@@ -162,6 +170,8 @@
   -o-border-radius: 0.6rem;
 }
 
+.main-section__paragraph {
+}
 
 /* introduction 前口上 section の設定 ==================================== */
 /* p */
@@ -418,6 +428,23 @@
   text-align: center;
 }
 .solc-flayer-wrap__img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+  Web Creator Page
+*/
+.web-creator-flayer {
+  margin-bottom: 1.6rem;
+}
+.web-creator-flayer:last-child {
+  margin-bottom: 0.8rem;
+}
+.flayer-images-wrap {
+  text-align: center;
+}
+.flayer-images-wrap__img {
   width: 100%;
   height: auto;
 }
