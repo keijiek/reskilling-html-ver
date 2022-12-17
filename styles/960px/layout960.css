@@ -41,13 +41,21 @@
 .logo-title__prime-head {
   margin-top: 0.4rem;
 }
+.logo-title__anchor {
+  text-decoration: none;
+}
 
 /*
   header の nav-container 部 ====================================
 */
+.nav-container {
+  
+}
 /* nav ul */
 .nav-container__list {
   /* flex box 設定 */
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,7 +72,7 @@
   border-style: solid;
   border-width: 1px;
   border-left: none;
-  width: 7rem;
+  width: 10rem;
   /* height: 100%; */
   padding: 0.3rem 0.2rem 0.2rem;
   text-align: center;
@@ -73,12 +81,12 @@
 .nav-container__item:first-child {
   border-left-style: solid;
   border-left-width: 1px;
-  border-top-left-radius: 0.6rem;
-  border-bottom-left-radius: 0.6rem;
+  /* border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem; */
 }
 .nav-container__item:last-child {
-  border-top-right-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
+  /* border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem; */
 }
 /* ナヴィのアイテムのa */
 .nav-container__item-anchor {
@@ -388,4 +396,28 @@
 }
 .address__head::after {
   content: ':';
+}
+
+
+/*
+  SOLC ページ
+*/
+.solc-description {
+  overflow: hidden;
+}
+.solc-description__img {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.4rem;
+}
+.solc-description__paragraph {
+}
+.solc-flayer-wrap {
+  text-align: center;
+}
+.solc-flayer-wrap__img {
+  width: 100%;
+  height: auto;
 }
