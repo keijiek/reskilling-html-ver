@@ -18,7 +18,7 @@
 
   --nav-bg-color: #fff;
   --nav-font-color: #000;
-  --nav-border-color: #000;
+  --nav-border-color: var(--header-bg-color);
 
   --section-bg-color: #f9f9f9;
   --section-border-color: #000;

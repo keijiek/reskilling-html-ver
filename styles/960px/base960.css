@@ -24,16 +24,22 @@ h1, h2, h3, h4, h5, h6, dl, dt, dd, li, ul, ol {
   box-sizing: border-box;
 }
 
+article {
+  margin-top: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
 
-ul, ol {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+ul, ol, dl {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
-
+dd {
+  margin-inline-start: 1.2rem;
+}
 /*
   次の4つのコンテナは width 100%。内部にコンテナを入れて、それをレイアウトの外枠にする。
   base css の次元で、width にこれ以上の数値を入れるのは、設計思想的にも、意図せぬ動作を回避するためにも、よろしくないと思う。

@@ -6,6 +6,19 @@
   justify-content: center;
 }
 
+.flexed-dt-and-dd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexed-dt-and-dd__dt::after {
+  content: ':';
+  margin-left: 0.6rem;
+}
+.flexed-dt-and-dd__dd {
+  margin-left: 0.4rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
   zoom: 1;

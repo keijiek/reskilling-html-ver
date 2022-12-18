@@ -5,4 +5,8 @@
     height: 420px;
     background-size: 768px;
   }
+  /* イベント詳細における地図 */
+  .event-details__map-img {
+    width: 60%;
+  }
 }

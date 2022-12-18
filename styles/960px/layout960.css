@@ -49,7 +49,6 @@
   header の nav-container 部 ====================================
 */
 .nav-container {
-  
 }
 /* nav ul */
 .nav-container__list {
@@ -71,6 +70,7 @@
   display: block;
   border-style: solid;
   border-width: 1px;
+  border-right-width: 2px;
   border-left: none;
   width: 10rem;
   /* height: 100%; */
@@ -80,7 +80,7 @@
 /* nav ul a li の 最初の要素のみ 欠けた border を付加 */
 .nav-container__item:first-child {
   border-left-style: solid;
-  border-left-width: 1px;
+  border-left-width: 0px;
   /* border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem; */
 }
@@ -447,4 +447,53 @@
 .flayer-images-wrap__img {
   width: 100%;
   height: auto;
+}
+
+/* 
+  mountaanous area jobs Page
+*/
+/* イベント詳細(dl) */
+.event-details {
+}
+.event-details__item-div {
+  margin-bottom: 0.4rem;
+}
+.event-details__item-div:last-child {
+  margin-bottom: 0;
+}
+
+.event-details__section-head::after {
+  content: ':';
+  margin-left: 0.4rem;
+}
+.event-details__map-img {
+  width: 50%;
+  height: auto;
+}
+.event-photo-gallery {
+}
+.event-photo-gallery__head {
+  text-align: center;
+}
+.event-photo-gallery__wrap {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.event-photo-gallery__img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*
+  動画編集講座ページ
+*/
+.schedule-list {
+}
+.schedule-list__item--be-held {
+}
+.schedule-list__item--be-held>dt,
+.schedule-list__item--be-held>dd {
+  opacity: 0.7;
 }

@@ -66,7 +66,7 @@
 
   /* Fotter, 確定 ==================================== */
   .footer__address {
-    max-width: 360px;
+    max-width: 90%;
     /* min-width: 320px; */
   }
   .address__head {
@@ -77,10 +77,19 @@
   .solc-description__img {
     width: 25%;
   }
+
+  /* イベント詳細における地図 */
+  .event-details__map-img {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:350px) {
   .logo-title__prime-head {
     font-size: 1.7rem;
+  }
+  .nav-container__item {
+    width: 8.2rem;
+    font-size: 0.7rem;
   }
 }
