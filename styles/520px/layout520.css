@@ -82,6 +82,11 @@
   .event-details__map-img {
     width: 80%;
   }
+
+  /* 動画編集のチラシ */
+  .vide-edit-flayer {
+    width: 80px;
+  }
 }
 
 @media screen and (max-width:350px) {

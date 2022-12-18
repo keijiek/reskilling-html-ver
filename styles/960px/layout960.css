@@ -489,6 +489,12 @@
 /*
   動画編集講座ページ
 */
+.vide-edit-flayer {
+  width: 120px;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+}
 .schedule-list {
 }
 .schedule-list__item--be-held {
@@ -496,4 +502,17 @@
 .schedule-list__item--be-held>dt,
 .schedule-list__item--be-held>dd {
   opacity: 0.7;
+}
+
+.introduction-paragraph {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: orange;
+  padding: 0.4rem 0.8rem;
+  vertical-align: middle;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }

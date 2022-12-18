@@ -5,6 +5,11 @@
     height: 420px;
     background-size: 768px;
   }
+  /* ナヴィ */
+  .nav-container__item {
+    width: 9.5rem;
+    font-size: 0.95rem;
+  }
   /* イベント詳細における地図 */
   .event-details__map-img {
     width: 60%;

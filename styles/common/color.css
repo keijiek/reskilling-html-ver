@@ -30,6 +30,15 @@ body {
   color: var(--main-font-color);
 }
 
+main a:link,
+main a:visited {
+  color: #00c;
+}
+main a:hover,
+main a:active {
+  color: #66f;
+}
+
 /* header の色 */
 header {
   background-color: var(--header-bg-color);

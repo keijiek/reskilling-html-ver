@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>あなたの就職&nbsp;応援プロジェクト</title>
+  <link rel="icon" href="favicon.ico">
   <!-- Webpack でバンドルする時は、次の二行(cssとjsを読む処理)を消して処理にかけること -->
   <link rel="stylesheet" href="styles/index.css">
   <script src="scripts/index.js"></script>
@@ -66,8 +67,16 @@
 <main>
   <div class="main-inner-container">
     <article>
-      <h2>動画編集講座</h2>
-      
+      <section class="main-section">
+        <h2>動画編集講座</h2>
+        <div class="overflow-hidden">
+          <img class="vide-edit-flayer" src="images/video-editing/video-edit-class-flyer.jpg" alt="">
+          <p>
+            Adobe&nbsp;社の&nbsp;Premiere&nbsp;Pro&nbsp;を用いた動画編集技術を学ぶことのできる講座です。講師は、プロとして活躍する宮崎出身の動画クリエイター「南国みーとぼーる」で、プロの動画編集を見せてもらうことが出来ます。ぜひ受講していただき、再就職をはじめ、今後のお仕事にお役立てください。
+          </p>
+        </div>
+      </section>
+
       <!-- 開催予定日一覧 -->
       <section class="main-section main-bordered-section">
         <h3 class="main-section__head main-section__head--under-bordered">開催予定日の一覧</h3>
@@ -135,6 +144,13 @@
         </dl>
       </section>
 
+      <section class="main-section main-bordered-section">
+        <h3 class="main-section__head main-section__head--under-bordered">講座の動画アーカイブ</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?app=desktop&v=owsidYXhzIo&feature=youtu.be">第一回(2022年11月26日)</a></li>
+        </ul>
+      </section>
+
       <section class="main-section">
         <h3 class="main-section__head">講座の様子</h3>
         <div class="event-photo-gallery__wrap">
@@ -145,6 +161,13 @@
         </div>
         <div class="event-photo-gallery__wrap">
           <img class="event-photo-gallery__img" src="images/video-editing/video-edit-class-01.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h3 class="main-section__head">第一回目のチラシ</h3>
+        <div class="event-photo-gallery__wrap">
+          <img class="event-photo-gallery__img" src="images/video-editing/video-edit-class-flyer.jpg" alt="">
         </div>
       </section>
     </article>
