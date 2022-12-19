@@ -23,3 +23,7 @@
   overflow: hidden;
   zoom: 1;
 }
+
+.text-indent {
+  text-indent: 1rem;
+}

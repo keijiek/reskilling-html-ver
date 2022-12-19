@@ -90,6 +90,8 @@
 }
 /* ナヴィのアイテムのa */
 .nav-container__item-anchor {
+  display: block;
+  width: 100%;
   height: 100%;
   text-decoration: none;
 }
@@ -505,6 +507,9 @@
 }
 
 .introduction-paragraph {
+  font-size: 1.05rem;
+}
+/* .introduction-paragraph {
   font-weight: bold;
   font-size: 1.1rem;
   background-color: orange;
@@ -515,4 +520,52 @@
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+} */
+
+/*
+  リンクのページ
+*/
+.web-site-introduction {
+  margin-bottom: 2rem;
+}
+.web-site-introduction:last-child {
+  margin-bottom: 0;
+}
+.web-site-introduction__banner-wrap {
+  margin-bottom: 0.6rem;
+}
+.web-site-introduction__banner-img {
+  width: 30%;
+  height: auto;
+}
+.web-site-introduction__description {
+
+}
+.web-site-introduction__banner-anchor {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.web-site-introduction__banner-anchor:link,
+.web-site-introduction__banner-anchor:visited {
+  color: black;
+}
+.web-site-introduction__banner-anchor:hover,
+.web-site-introduction__banner-anchor:active {
+  opacity: 0.9;
+}
+.web-site-introduction__small-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* コミュニティに参加する */
+.sns-account {
+  margin-bottom: 1rem;
+}
+.sns-account:last-child {
+  margin-bottom: 0;
+}
+.sns-account-list {
+  padding-left: 1rem;
+  list-style-type: none;
 }

@@ -14,4 +14,13 @@
   .event-details__map-img {
     width: 60%;
   }
+  /* リンクバナーのサイズを大きく */
+  .web-site-introduction__banner-img {
+    width: 40%;
+    height: auto;
+  }
+  .logo-like-string-anchor {
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
 }

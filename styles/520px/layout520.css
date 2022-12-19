@@ -87,6 +87,12 @@
   .vide-edit-flayer {
     width: 80px;
   }
+
+  /* リンクバナーのサイズを大きく */
+  .web-site-introduction__banner-img {
+    width: 50%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width:350px) {
