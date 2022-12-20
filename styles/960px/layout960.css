@@ -543,15 +543,16 @@
 }
 .web-site-introduction__banner-anchor {
   font-size: 1.8rem;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .web-site-introduction__banner-anchor:link,
 .web-site-introduction__banner-anchor:visited {
-  color: black;
+  color: #00c;
 }
 .web-site-introduction__banner-anchor:hover,
 .web-site-introduction__banner-anchor:active {
-  opacity: 0.9;
+  color: #00f;
+  opacity: 0.8;
 }
 .web-site-introduction__small-logo {
   width: 60px;
@@ -568,4 +569,30 @@
 .sns-account-list {
   padding-left: 1rem;
   list-style-type: none;
+}
+
+.before-logo::before {
+  content: '';
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.6rem;
+}
+.before-facebook::before {
+  background-image: url(../../images/comunity/facebook.png);
+}
+.before-twitter::before {
+  background-image: url(../../images/comunity/twitter.png);
+}
+.before-instagram::before {
+  background-image: url(../../images/comunity/instagram.png);
+}
+.follow-our-sns-img {
+  width: 12%;
+  height: auto;
+  float: left;
+  margin-right: 0.6rem;
+  margin-bottom: 0.6rem;
 }

@@ -93,6 +93,9 @@
     width: 50%;
     height: auto;
   }
+  .follow-our-sns-img {
+    width: 22%;
+  }
 }
 
 @media screen and (max-width:350px) {
