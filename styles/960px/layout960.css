@@ -596,3 +596,24 @@
   margin-right: 0.6rem;
   margin-bottom: 0.6rem;
 }
+
+/* pdf anchor */
+.pdf-anchor::after {
+  background-image: url(../../images/common/pdf_icon.png);
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+}
+@media screen and (max-width: 520px) {
+  .pdf-anchor::after {
+    width: 16px;
+    height: 16px;
+    background-size: 16px auto;
+  }
+}
